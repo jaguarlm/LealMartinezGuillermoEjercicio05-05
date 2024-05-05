@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>EjercicioPokemon_GuillermoLeal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        table {
+            width: 60%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #pokemon-info {
+            width: 35%;
+            border: 1px solid #dddddd;
+            padding: 10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Pokemones</h1>
+        <table id="tabla-pokemon">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                </tr>
+            </thead>
+            <tbody id="lista-pokemon"></tbody>
+        </table>
+        <button onclick="cambiarPagina(-1)">Atrás</button>
+        <button onclick="cambiarPagina(1)">Adelante</button>
+    </div>
+    <div id="pokemon-info">
+        <p><strong>Selecciona un Pokémon para ver su información.</strong></p>
+    </div>
+    <script src="ejercicioPokemon_GuillermoLeal.js"></script>
+</body>
+</html>
